@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #2d7c31;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+nav {
+    background: #e0e0e0;
+    padding: 1em;
+    text-align: center;
+}
+nav a {
+    margin: 0 1em;
+    color: #2d7c31;
+    text-decoration: none;
+    font-weight: bold;
+}
+main {
+    padding: 2em;
+}
+footer {
+    background: #2d7c31;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.about-flex {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+.about-flex section {
+    flex: 1 1 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    margin-bottom: 1em;
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .about-flex {
+        flex-direction: column;
+    }
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    main {
+        padding: 1em;
+    }
+}
+
+.contact-page {
+    text-align: center;
+    padding: 1rem;
+}
+
+.contact-page .contact-form {
+    display: inline-block;      /* centers the form block */
+    text-align: left;           /* keep labels/inputs left-aligned inside */
+    max-width: 520px;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.contact-page label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.contact-page input[type="text"],
+.contact-page input[type="email"],
+.contact-page textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-page button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #2d7c31;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-page .contact-email {
+    text-align: center;
+    margin-top: 1rem;
+}
+.map-container {
+    width: 100%;
+    max-width: 720px;   /* change as needed */
+    margin: 1rem auto;  /* centers below the form */
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+
+.map-container iframe {
+    width: 100%;
+    height: 360px; 
+    border: 0;
+}
+
+@media (max-width: 480px) {
+    .map-container iframe { height: 240px; }
+}
+
